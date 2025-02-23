@@ -28,10 +28,10 @@
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
-&kp GRAVE      &kp Q  &kp W     &kp F         &kp P  &kp B                                                                 &kp J         &kp L       &kp U      &kp Y    &kp MINUS  &kp EQUAL
-&kp TAB        &kp A  &kp R     &kp S         &kp T  &kp G                                                                 &kp M         &kp N       &kp E      &kp I    &kp O      &kp SEMICOLON
-&kp BACKSLASH  &kp Z  &kp X     &kp C         &kp D  &kp V             &kp LSHFT  &kp ESCAPE  &kp BACKSPACE     &kp LSHFT  &kp K         &kp H       &kp COMMA  &kp DOT  &kp SLASH  &kp SQT
-                      &kp LGUI  &kp LEFT_ALT  &mo 1  &kp LEFT_CONTROL  &kp ENTER  &kp SPACE   &kp LEFT_CONTROL  &mo 2      &kp LEFT_ALT  &kp DELETE
+&kp GRAVE      &kp Q  &kp W     &kp F         &kp P  &kp B                                                              &kp J         &kp L       &kp U      &kp Y    &kp MINUS  &kp EQUAL
+&kp TAB        &kp A  &kp R     &kp S         &kp T  &kp G                                                              &kp M         &kp N       &kp E      &kp I    &kp O      &kp SEMICOLON
+&kp BACKSLASH  &kp Z  &kp X     &kp C         &kp D  &kp V             &kp LSHFT  &kp ESCAPE  &kp BACKSPACE  &kp LCTRL  &kp K         &kp H       &kp COMMA  &kp DOT  &kp SLASH  &kp SQT
+                      &kp LGUI  &kp LEFT_ALT  &mo 1  &kp LEFT_CONTROL  &kp ENTER  &kp SPACE   &kp LSHFT      &mo 2      &kp LEFT_ALT  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
