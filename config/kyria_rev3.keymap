@@ -21,12 +21,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
-            // |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
-            // | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | LAYER 1 | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
-            //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
-
+            display-name = "base";
             bindings = <
 &kp GRAVE      &kp Q  &kp W     &kp F         &kp P  &kp B                                                              &kp J         &kp L       &kp U      &kp Y    &kp MINUS  &kp EQUAL
 &kp TAB        &kp A  &kp R     &kp S         &kp T  &kp G                                                              &kp M         &kp N       &kp E      &kp I    &kp O      &kp SEMICOLON
@@ -38,12 +33,7 @@
         };
 
         lower_layer {
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |       |      |BT_CLR|BTSEL0|BTSEL1|BTSEL2|                                         |      |      |      |      |      |      |
-            // |       |      |      |BTSEL3|BTSEL4|      |                                         |      |      |      |      |      |      |
-            // |       |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
-            //                       |      |      |      |      |      |      |      |      |      |      |      |      |
-
+            display-name = "lower";
             bindings = <
 &to 3   &kp F9  &kp F10  &kp F11  &kp F12  &kp PRINTSCREEN                                  &trans        &kp N7        &kp N8        &kp N9        &trans  &trans
 &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans                                           &trans        &kp N4        &kp N5        &kp N6        &trans  &trans
@@ -55,6 +45,7 @@
         };
 
         raise_layer {
+            display-name = "raise";
             bindings = <
 &trans  &kp EXCLAMATION  &kp AT         &kp HASH      &kp DOLLAR            &kp PERCENT                                            &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
 &trans  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
@@ -64,6 +55,7 @@
         };
 
         nav3d_layer {
+            display-name = "nav_3d";
             bindings = <
 &to 0  &kp TAB    &kp Q   &kp W   &kp E   &kp R                                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
 &none  &kp LSHFT  &kp A   &kp S   &kp D   &kp F                                           &none         &none         &none         &none         &none         &bt BT_PRV
