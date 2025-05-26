@@ -47,10 +47,10 @@
         raise_layer {
             display-name = "raise";
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT         &kp HASH      &kp DOLLAR            &kp PERCENT                                            &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
-&trans  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
-&trans  &trans           &trans         &trans        &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans  &trans  &trans  &kp LBKT  &kp RBKT   &trans     &trans     &trans  &trans
-                         &trans         &trans        &trans                &trans                 &trans  &trans  &trans  &trans  &trans    &trans
+&trans  &kp EXCLAMATION  &kp AT            &kp HASH           &kp DOLLAR            &kp PERCENT                                            &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
+&trans  &kp CARET        &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
+&trans  &trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
+                         &trans            &trans             &trans                &trans                 &trans  &trans  &trans  &trans  &trans    &trans
             >;
         };
 
