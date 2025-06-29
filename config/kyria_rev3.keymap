@@ -37,10 +37,10 @@
         default_layer {
             display-name = "base";
             bindings = <
-&kp GRAVE            &kp Q  &kp W                 &kp F         &kp P  &kp B                                                                     &kp J         &kp L         &kp U      &kp Y    &kp MINUS  &kp EQUAL
-&tsc TAB LEFT_SHIFT  &kp A  &kp R                 &kp S         &kp T  &kp G                                                                     &kp M         &kp N         &kp E      &kp I    &kp O      &kp SEMICOLON
-&kp BACKSLASH        &kp Z  &kp X                 &kp C         &kp D  &kp V             &kp LEFT_COMMAND  &kp ESCAPE  &kp BACKSPACE  &kp LCTRL  &kp K         &kp H         &kp COMMA  &kp DOT  &kp SLASH  &kp SQT
-                            &kp LG(LS(NUMBER_4))  &kp LEFT_ALT  &mo 1  &kp LEFT_CONTROL  &kp ENTER         &kp SPACE   &kp LSHFT      &mo 2      &kp LEFT_ALT  &kp LEFT_GUI
+&kp GRAVE      &kp Q  &kp W         &kp F         &kp P             &kp B                                                               &kp J         &kp L         &kp U      &kp Y    &kp MINUS  &kp EQUAL
+&kp TAB        &kp A  &kp R         &kp S         &kp T             &kp G                                                               &kp M         &kp N         &kp E      &kp I    &kp O      &kp SEMICOLON
+&kp BACKSLASH  &kp Z  &kp X         &kp C         &kp D             &kp V  &kp LEFT_SHIFT  &kp ESCAPE  &kp BACKSPACE  &kp LEFT_SHIFT    &kp K         &kp H         &kp COMMA  &kp DOT  &kp SLASH  &kp SQT
+                      &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 1  &kp ENTER       &kp SPACE   &mo 2          &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -61,10 +61,10 @@
         raise_layer {
             display-name = "raise";
             bindings = <
-&trans          &kp EXCLAMATION  &kp AT            &kp HASH           &kp DOLLAR            &kp PERCENT                                            &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
-&kp LEFT_SHIFT  &kp CARET        &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
-&trans          &trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
-                                 &trans            &trans             &trans                &trans                 &trans  &trans  &trans  &trans  &trans    &trans
+&trans  &kp EXCLAMATION  &kp AT            &kp HASH           &kp DOLLAR            &kp PERCENT                                            &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
+&trans  &kp CARET        &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
+&trans  &trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
+                         &trans            &trans             &trans                &trans                 &trans  &trans  &trans  &trans  &trans    &trans
             >;
         };
 
