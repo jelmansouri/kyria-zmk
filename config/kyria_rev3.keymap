@@ -37,10 +37,10 @@
         default_layer {
             display-name = "base";
             bindings = <
-&kp GRAVE      &kp Q  &kp W         &kp F             &kp P         &kp B                                                             &kp J             &kp L         &kp U      &kp Y    &kp MINUS  &kp EQUAL
-&kp TAB        &kp A  &kp R         &kp S             &kp T         &kp G                                                             &kp M             &kp N         &kp E      &kp I    &kp O      &kp SEMICOLON
-&kp BACKSLASH  &kp Z  &kp X         &kp C             &kp D         &kp V  &kp LEFT_SHIFT  &kp ESCAPE  &kp BACKSPACE  &kp LEFT_SHIFT  &kp K             &kp H         &kp COMMA  &kp DOT  &kp SLASH  &kp SQT
-                      &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &mo 1  &kp ENTER       &kp SPACE   &mo 2          &kp LEFT_GUI    &kp LEFT_CONTROL  &kp LEFT_ALT
+&kp GRAVE      &kp Q  &kp W             &kp F         &kp P         &kp B                                                             &kp J         &kp L             &kp U      &kp Y    &kp MINUS  &kp EQUAL
+&kp TAB        &kp A  &kp R             &kp S         &kp T         &kp G                                                             &kp M         &kp N             &kp E      &kp I    &kp O      &kp SEMICOLON
+&kp BACKSLASH  &kp Z  &kp X             &kp C         &kp D         &kp V  &kp LEFT_SHIFT  &kp ESCAPE  &kp BACKSPACE  &kp LEFT_SHIFT  &kp K         &kp H             &kp COMMA  &kp DOT  &kp SLASH  &kp SQT
+                      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &mo 1  &kp ENTER       &kp SPACE   &mo 2          &kp LEFT_GUI    &kp LEFT_ALT  &kp LEFT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
