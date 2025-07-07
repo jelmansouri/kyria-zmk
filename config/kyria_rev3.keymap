@@ -17,6 +17,10 @@
 };
  */
 
+&glidepoint_listener {
+        input-processors = <&zip_temp_layer 3 500>;
+};
+
 / {
     behaviors {
         tsc: tab_shift_combined {
