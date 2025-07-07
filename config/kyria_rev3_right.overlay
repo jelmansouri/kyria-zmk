@@ -4,13 +4,7 @@
     status = "okay";
 
     glidepoint: glidepoint@2a {
-        compatible = "cirque,pinnacle";
-        reg = <0x2a>;
         status = "okay";
-        dr-gpios = <&pro_micro 0 (GPIO_ACTIVE_HIGH)>;
-
-        y-invert;
-        sensitivity = "1x";
     };
 };
 
@@ -20,6 +14,7 @@
     device = <&glidepoint>;
 };
 
+
 &glidepoint_split {
-    device = <&glidepoint>;
+    device = <&glidepoint0>;
 };
