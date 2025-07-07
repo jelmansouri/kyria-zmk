@@ -2,6 +2,19 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/input_transform.h>
 
+&pro_micro_i2c {
+    status = "disabled";
+    glidepoint0: glidepoint@2a {
+        compatible = "cirque,pinnacle";
+        reg = <0x2a>;
+        status = "disabled";
+        dr-gpios = <&pro_micro 0 (GPIO_ACTIVE_HIGH)>;
+        y-invert;
+
+        sensitivity = "1x";
+    };
+};
+
 / {
     split_inputs {
         #address-cells = <1>;
