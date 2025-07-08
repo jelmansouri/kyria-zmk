@@ -15,7 +15,7 @@
 
     glidepoint_listener: glidepoint_listener {
         compatible = "zmk,input-listener";
-        input-processors = <&zip_xy_scaler 3 2>;
+        // input-processors = <&zip_xy_scaler 3 2>;
         status = "disabled";
         device = <&glidepoint_split>;
         
@@ -38,18 +38,18 @@
         // };
     };
     
-    // Mouse move behavior customization
-    mmv {
-        acceleration-exponent = <1>;      // Default: 1
-        time-to-max-speed-ms = <500>;     // Lower = faster ramp-up to max speed (default: 300)
-        delay-ms = <0>;                   // Default: 0
-    };
-
-    // Mouse scroll behavior customization
-    msc {
-        acceleration-exponent = <1>;      // Default: 0
-        time-to-max-speed-ms = <300>;     // Default: 300
-        delay-ms = <0>;                   // Default: 0
-
-    };
+    // // Mouse move behavior customization
+    // mmv {
+    //     acceleration-exponent = <1>;      // Default: 1
+    //     time-to-max-speed-ms = <500>;     // Lower = faster ramp-up to max speed (default: 300)
+    //     delay-ms = <0>;                   // Default: 0
+    // };
+    //
+    // // Mouse scroll behavior customization
+    // msc {
+    //     acceleration-exponent = <1>;      // Default: 0
+    //     time-to-max-speed-ms = <300>;     // Default: 300
+    //     delay-ms = <0>;                   // Default: 0
+    //
+    // };
 };
