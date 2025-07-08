@@ -10,12 +10,10 @@
         dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
 
         sensitivity = "2x";
+        y-invert;
+        sleep;
+        no-taps;
     };
-};
-
-&glidepoint_listener {
-    status = "okay";
-	device = <&glidepoint>;
 };
 
 &glidepoint_split {
