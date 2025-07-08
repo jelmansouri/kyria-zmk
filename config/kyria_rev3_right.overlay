@@ -16,6 +16,12 @@
     };
 };
 
+// Overrides for the input listener node
+&glidepoint_listener {
+    status = "okay";
+    device = <&glidepoint>;
+};
+
 &glidepoint_split {
     device = <&glidepoint>;
 };
