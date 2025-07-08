@@ -7,7 +7,7 @@
         compatible = "cirque,pinnacle";
         reg = <0x2a>;
         status = "okay";
-        dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_LOW)>;
+        dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
 
         y-invert;
         sensitivity = "1x";
