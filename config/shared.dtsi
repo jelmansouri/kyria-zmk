@@ -22,7 +22,7 @@
         // Scroll setup using layer override
         scroll_mode {
             layers = <4>;  // Use a layer for scrolling
-            input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT | INPUT_TRANSFORM_X_INVERT)>, <&zip_scroll_scaler 1 10>;
+            input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT | INPUT_TRANSFORM_X_INVERT)>, <&zip_scroll_scaler 1 2>;
         };
 
         // // Fast movement mode (warp)
@@ -38,18 +38,18 @@
         // };
     };
     
-    // Mouse move behavior customization
-    mmv {
-        acceleration-exponent = <1>;      // Default: 1
-        time-to-max-speed-ms = <500>;     // Lower = faster ramp-up to max speed (default: 300)
-        delay-ms = <0>;                   // Default: 0
-    };
-
-    // Mouse scroll behavior customization
-    msc {
-        acceleration-exponent = <1>;      // Default: 0
-        time-to-max-speed-ms = <300>;     // Default: 300
-        delay-ms = <0>;                   // Default: 0
-
-    };
+    // // Mouse move behavior customization
+    // mmv {
+    //     acceleration-exponent = <1>;      // Default: 1
+    //     time-to-max-speed-ms = <500>;     // Lower = faster ramp-up to max speed (default: 300)
+    //     delay-ms = <0>;                   // Default: 0
+    // };
+    //
+    // // Mouse scroll behavior customization
+    // msc {
+    //     acceleration-exponent = <2>;      // Default: 0
+    //     time-to-max-speed-ms = <300>;     // Default: 300
+    //     delay-ms = <0>;                   // Default: 0
+    //
+    // };
 };
