@@ -22,7 +22,7 @@
         // Scroll setup using layer override
         scroll_mode {
             layers = <4>;  // Use a layer for scrolling
-            input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT | INPUT_TRANSFORM_X_INVERT)>, <&zip_scroll_scaler 1 2>;
+            input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT | INPUT_TRANSFORM_X_INVERT)>, <&zip_scroll_scaler 1 8>;
         };
 
         // // Fast movement mode (warp)
