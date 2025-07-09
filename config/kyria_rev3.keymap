@@ -96,20 +96,20 @@
         navigation {
             display-name = "navigation";
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT         &kp HASH      &kp DOLLAR            &kp PERCENT                                            &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
-&trans  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
-&trans  &trans           &trans         &trans        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
-                         &trans         &trans        &trans                &trans                 &trans  &trans  &trans  &trans  &trans    &trans
+&trans  &trans        &trans            &trans          &trans            &trans                                  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
+&trans  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &trans                                  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
+&trans  &trans        &trans            &trans          &trans            &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
+                      &trans            &trans          &trans            &trans  &trans  &trans  &trans  &trans  &trans    &trans
             >;
         };
 
         symbols {
             display-name = "symbols";
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT         &kp HASH      &kp DOLLAR            &kp PERCENT                                            &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
-&trans  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
-&trans  &trans           &trans         &trans        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
-                         &trans         &trans        &trans                &trans                 &trans  &trans  &trans  &trans  &trans    &trans
+&trans  &kp EXCLAMATION  &kp AT         &kp HASH      &kp DOLLAR            &kp PERCENT                                            &trans  &trans        &trans          &trans            &trans        &trans
+&trans  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                  &trans  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans
+&trans  &trans           &trans         &trans        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans  &trans  &trans        &trans          &trans            &trans        &trans
+                         &trans         &trans        &trans                &trans                 &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
