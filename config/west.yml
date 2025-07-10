@@ -5,6 +5,8 @@ manifest:
     # Additional modules containing boards/shields/custom code can be listed here as well
     - name: petejohanson
       url-base: https://github.com/petejohanson
+    - name: englmaxi 
+      url-base: https://github.com/englmaxi
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -12,6 +14,9 @@ manifest:
       import: app/west.yml
     - name: cirque-input-module
       remote: petejohanson
+      revision: main
+    - name: zmk-dongle-display
+      remote: englmaxi
       revision: main
   self:
     path: config
