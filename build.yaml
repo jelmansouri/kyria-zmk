@@ -20,7 +20,7 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: kyria_rev3_left nice_view_adapter dongle_display
+    shield: kyria_rev3_left nice_view_adapter dongle_display_view_pro_micro
   - board: nice_nano_v2
     shield: kyria_rev3_right
 #    snippet: zmk-usb-logging
