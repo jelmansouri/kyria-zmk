@@ -25,10 +25,10 @@
         default_layer {
             display-name = "base";
             bindings = <
-&kp GRAVE      &kp Q  &kp W      &kp F       &kp P  &kp B                                                   &kp J       &kp L      &kp U      &kp Y    &kp MINUS  &kp EQUAL
-&kp TAB        &kp A  &kp R      &kp S       &kp T  &kp G                                                   &kp M       &kp N      &kp E      &kp I    &kp O      &kp SEMICOLON
-&kp BACKSLASH  &kp Z  &kp X      &kp C       &kp D  &kp V  &kp ESCAPE  &kp ENTER  &kp SPACE  &kp BACKSPACE  &kp K       &kp H      &kp COMMA  &kp DOT  &kp SLASH  &kp SQT
-                      &kp GLOBE  &caps_word  &mo 3  &mo 5  &mo 1       &mo 2      &mo 6      &mo 4          &caps_word  &kp GLOBE
+&kp GRAVE      &kp Q  &kp W      &kp F             &kp P  &kp B                                                   &kp J       &kp L      &kp U      &kp Y    &kp MINUS  &kp EQUAL
+&kp TAB        &kp A  &kp R      &kp S             &kp T  &kp G                                                   &kp M       &kp N      &kp E      &kp I    &kp O      &kp SEMICOLON
+&kp BACKSLASH  &kp Z  &kp X      &kp C             &kp D  &kp V  &kp ESCAPE  &kp ENTER  &kp SPACE  &kp BACKSPACE  &kp K       &kp H      &kp COMMA  &kp DOT  &kp SLASH  &kp SQT
+                      &kp GLOBE  &kp LEFT_COMMAND  &mo 3  &mo 5  &mo 1       &mo 2      &mo 6      &mo 4          &caps_word  &kp GLOBE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
