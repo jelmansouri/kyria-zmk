@@ -9,7 +9,7 @@
         status = "okay";
         dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
 
-        sensitivity = "2x";
+        sensitivity = "3x";
         y-invert;
         no-taps;
         // sleep;
