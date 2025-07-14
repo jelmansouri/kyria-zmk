@@ -18,6 +18,8 @@
 };
  */
 
+&sk { quick-release; };
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -37,19 +39,19 @@
         alpha-mods-left {
             display-name = "a-mod-l";
             bindings = <
-&trans  &trans            &trans        &trans            &trans          &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans        &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                          &trans        &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans            &trans          &trans            &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &sk LEFT_ALT  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sk LEFT_COMMAND  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans            &trans          &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                      &trans            &trans          &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         alpha-mods-right {
             display-name = "a-mod-r";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans          &trans            &trans        &trans            &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans            &trans        &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans            &trans          &trans            &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &sk LEFT_COMMAND  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans            &trans        &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
