@@ -18,8 +18,6 @@
 };
  */
 
-&sk { quick-release; };
-
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -40,7 +38,7 @@
             display-name = "a-mod-l";
             bindings = <
 &trans  &trans        &trans            &trans          &trans            &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &sk LEFT_ALT  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sk LEFT_COMMAND  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans            &trans          &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                       &trans            &trans          &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
@@ -50,7 +48,7 @@
             display-name = "a-mod-r";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans            &trans          &trans            &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &sk LEFT_COMMAND  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans            &trans        &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
@@ -59,10 +57,10 @@
         numbers {
             display-name = "nums";
             bindings = <
-&to 7   &trans            &trans        &trans            &trans          &mo 8                                      &none         &kp N7        &kp N8        &kp N9        &trans  &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &mkp LCLK                                  &none         &kp N4        &kp N5        &kp N6        &none   &trans
-&trans  &trans            &trans        &trans            &trans          &mkp RCLK  &trans  &trans  &trans  &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &none
-                          &trans        &trans            &trans          &trans     &trans  &trans  &trans  &trans  &trans        &trans
+&to 7   &trans        &trans            &trans          &trans            &mo 8                                      &none         &kp N7        &kp N8        &kp N9        &trans  &trans
+&trans  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &mkp LCLK                                  &none         &kp N4        &kp N5        &kp N6        &none   &trans
+&trans  &trans        &trans            &trans          &trans            &mkp RCLK  &trans  &trans  &trans  &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &none
+                      &trans            &trans          &trans            &trans     &trans  &trans  &trans  &trans  &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -71,9 +69,9 @@
         fn {
             display-name = "fn";
             bindings = <
-&to 7   &kp F9  &kp F10  &kp F11  &kp F12  &trans                                  &trans  &trans          &trans            &trans        &trans            &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans                                  &trans  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &trans
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans            &trans        &trans            &trans
+&to 7   &kp F9  &kp F10  &kp F11  &kp F12  &trans                                  &trans  &trans            &trans          &trans            &trans        &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans                                  &trans  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans            &trans        &trans
                 &trans   &trans   &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
@@ -85,19 +83,19 @@
         navigation {
             display-name = "nav";
             bindings = <
-&trans  &trans            &trans        &trans            &trans          &trans                                  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans                                  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
-&trans  &trans            &trans        &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
-                          &trans        &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans    &trans
+&trans  &trans            &trans        &trans          &trans            &trans                                  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &trans                                  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
+&trans  &trans            &trans        &trans          &trans            &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
+                          &trans        &trans          &trans            &trans  &trans  &trans  &trans  &trans  &trans    &trans
             >;
         };
 
         symbols {
             display-name = "sym";
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT         &kp HASH      &kp DOLLAR            &kp PERCENT                                            &trans  &trans          &trans            &trans        &trans            &trans
-&trans  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                  &trans  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &trans
-&trans  &trans           &trans         &trans        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans  &trans  &trans          &trans            &trans        &trans            &trans
+&trans  &kp EXCLAMATION  &kp AT         &kp HASH      &kp DOLLAR            &kp PERCENT                                            &trans  &trans            &trans          &trans            &trans        &trans
+&trans  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                  &trans  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans
+&trans  &trans           &trans         &trans        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans            &trans        &trans
                          &trans         &trans        &trans                &trans                 &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
