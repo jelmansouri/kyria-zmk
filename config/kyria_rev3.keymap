@@ -63,7 +63,7 @@
 &kp GRAVE      &kp Q            &kp W                &kp F                &kp P              &kp B                                                   &kp J       &kp L              &kp U                &kp Y                &kp MINUS        &kp EQUAL
 &kp TAB        &hml LEFT_ALT A  &hml LEFT_CONTROL R  &hml LEFT_COMMAND S  &hml LEFT_SHIFT T  &kp G                                                   &kp M       &hmr LEFT_SHIFT N  &hmr LEFT_COMMAND E  &hmr LEFT_CONTROL I  &hmr LEFT_ALT O  &kp SEMICOLON
 &kp BACKSLASH  &kp Z            &kp X                &kp C                &kp D              &kp V  &kp ESCAPE  &kp ENTER  &kp SPACE  &kp BACKSPACE  &kp K       &kp H              &kp COMMA            &kp DOT              &kp SLASH        &kp SQT
-                                &kp GLOBE            &kp LEFT_COMMAND     &kp LEFT_COMMAND   &mo 4  &mo 2       &mo 5      &mo 3      &all_cap       &all_cap 1  &kp GLOBE
+                                &kp GLOBE            &kp LEFT_COMMAND     &kp LEFT_COMMAND   &mo 4  &mo 2       &mo 5      &mo 3      &all_cap 1     &all_cap 1  &kp GLOBE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
