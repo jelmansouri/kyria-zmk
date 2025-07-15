@@ -20,7 +20,7 @@
 
 / {
     behaviors {
-        my_caps_word: my_caps_word {
+        all_cap: all_cap {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
             continue-list = <BACKSPACE UNDERSCORE N0 N1 N2 N3 N4 N5 N6 N7 N8 N9>;
@@ -37,7 +37,7 @@
 &kp GRAVE      &kp Q  &kp W      &kp F             &kp P  &kp B                                                   &kp J       &kp L      &kp U      &kp Y    &kp MINUS  &kp EQUAL
 &kp TAB        &kp A  &kp R      &kp S             &kp T  &kp G                                                   &kp M       &kp N      &kp E      &kp I    &kp O      &kp SEMICOLON
 &kp BACKSLASH  &kp Z  &kp X      &kp C             &kp D  &kp V  &kp ESCAPE  &kp ENTER  &kp SPACE  &kp BACKSPACE  &kp K       &kp H      &kp COMMA  &kp DOT  &kp SLASH  &kp SQT
-                      &kp GLOBE  &kp LEFT_COMMAND  &mo 3  &mo 5  &mo 1       &mo 2      &mo 6      &mo 4          &caps_word  &kp GLOBE
+                      &kp GLOBE  &kp LEFT_COMMAND  &mo 4  &mo 6  &mo 2       &mo 3      &mo 7      &mo 5          &all_cap 1  &kp GLOBE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -47,7 +47,7 @@
             display-name = "capw";
             bindings = <
 &trans  &kp LS(Q)  &kp LS(W)                &kp LS(F)            &kp LS(P)                &kp LS(B)                                  &kp LS(J)  &kp LS(L)                &kp LS(U)            &kp LS(Y)                &kp LS(MINUS)  &trans
-&trans  &kp LS(A)  &hml LEFT_CONTROL LS(R)  &hml LEFT_ALT LS(S)  &hml LEFT_COMMAND LS(T)  &kp LS(G)                                  &kp LS(M)  &hmr LEFT_COMMAND LS(N)  &hmr LEFT_ALT LS(E)  &hmr LEFT_CONTROL LS(I)  &kp LS(O)      &trans
+&trans  &kp LS(A)  &kp LS(R)  &kp LS(S)  &kp LS(T)  &kp LS(G)                                  &kp LS(M)  &kp LS(N)  &kp LS(E)  &kp LS(I)  &kp LS(O)      &trans
 &trans  &kp LS(Z)  &kp LS(X)                &kp LS(C)            &kp LS(D)                &kp LS(V)  &trans  &trans  &trans  &trans  &kp LS(K)  &kp LS(H)                &trans               &trans                   &trans         &trans
                    &trans                   &trans               &trans                   &trans     &trans  &trans  &trans  &trans  &trans     &trans
             >;
@@ -80,7 +80,7 @@
         numbers {
             display-name = "nums";
             bindings = <
-&to 7   &trans        &trans            &trans          &trans            &mo 8                                      &none         &kp N7        &kp N8        &kp N9        &trans  &trans
+&to 8   &trans        &trans            &trans          &trans            &mo 9                                      &none         &kp N7        &kp N8        &kp N9        &trans  &trans
 &trans  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &mkp LCLK                                  &none         &kp N4        &kp N5        &kp N6        &none   &trans
 &trans  &trans        &trans            &trans          &trans            &mkp RCLK  &trans  &trans  &trans  &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &none
                       &trans            &trans          &trans            &trans     &trans  &trans  &trans  &trans  &trans        &trans
