@@ -5,8 +5,10 @@ manifest:
     # Additional modules containing boards/shields/custom code can be listed here as well
     - name: petejohanson
       url-base: https://github.com/petejohanson
-    - name: mctechnology17 
-      url-base: https://github.com/mctechnology17
+    - name: urob
+      url-base: https://github.com/urob
+    - name: jelmansouri
+      url-base: https://github.com/jelmansouri
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -15,8 +17,8 @@ manifest:
     - name: cirque-input-module
       remote: petejohanson
       revision: main
-    - name: zmk-dongle-display-view
-      remote: mctechnology17
-      revision: main
+    - name: zmk-auto-layer
+      remote: jelmansouri
+      revision: fix/modifier-exclusivity
   self:
     path: config
