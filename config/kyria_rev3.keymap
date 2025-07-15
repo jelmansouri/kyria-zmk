@@ -19,6 +19,15 @@
  */
 
 / {
+    behaviors {
+        my_caps_word: my_caps_word {
+            compatible = "zmk,behavior-auto-layer";
+            #binding-cells = <1>;
+            continue-list = <BACKSPACE UNDERSCORE N0 N1 N2 N3 N4 N5 N6 N7 N8 N9>;
+            ignore-alphas;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -32,6 +41,20 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+
+        caps_word {
+            display-name = "capw";
+            bindings = <
+&trans  &kp LS(Q)  &kp LS(W)                &kp LS(F)            &kp LS(P)                &kp LS(B)                                  &kp LS(J)  &kp LS(L)                &kp LS(U)            &kp LS(Y)                &kp LS(MINUS)  &trans
+&trans  &kp LS(A)  &hml LEFT_CONTROL LS(R)  &hml LEFT_ALT LS(S)  &hml LEFT_COMMAND LS(T)  &kp LS(G)                                  &kp LS(M)  &hmr LEFT_COMMAND LS(N)  &hmr LEFT_ALT LS(E)  &hmr LEFT_CONTROL LS(I)  &kp LS(O)      &trans
+&trans  &kp LS(Z)  &kp LS(X)                &kp LS(C)            &kp LS(D)                &kp LS(V)  &trans  &trans  &trans  &trans  &kp LS(K)  &kp LS(H)                &trans               &trans                   &trans         &trans
+                   &trans                   &trans               &trans                   &trans     &trans  &trans  &trans  &trans  &trans     &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         alpha-mods-left {
