@@ -60,72 +60,52 @@
         default_layer {
             display-name = "base";
             bindings = <
-&kp GRAVE      &kp Q            &kp W                &kp F                &kp P              &kp B                                                         &kp J       &kp L              &kp U                &kp Y                &kp MINUS        &kp EQUAL
-&kp TAB        &hml LEFT_ALT A  &hml LEFT_CONTROL R  &hml LEFT_COMMAND S  &hml LEFT_SHIFT T  &kp G                                                         &kp M       &hmr LEFT_SHIFT N  &hmr LEFT_COMMAND E  &hmr LEFT_CONTROL I  &hmr LEFT_ALT O  &kp SEMICOLON
-&kp BACKSLASH  &kp Z            &kp X                &kp C                &kp D              &kp V  &kp ESCAPE        &kp ENTER  &kp SPACE  &kp BACKSPACE  &kp K       &kp H              &kp COMMA            &kp DOT              &kp SLASH        &kp SQT
-                                &kp GLOBE            &kp LEFT_COMMAND     &mo 2              &mo 4  &kp LEFT_COMMAND  &all_cap 1 &mo 3      &mo 5          &all_cap 1  &kp GLOBE
+&kp GRAVE      &kp Q  &kp W                &kp F             &kp P            &kp B                                                                  &kp J       &kp L                     &kp U            &kp Y                &kp MINUS  &kp EQUAL
+&kp TAB        &kp A  &hml LEFT_CONTROL R  &hml LEFT_ALT S   &hml LEFT_GUI T  &kp G                                                                  &kp M       &hmr LEFT_SHIFT LEFT_GUI  &hmr LEFT_ALT E  &hmr LEFT_CONTROL I  &kp O      &kp SEMICOLON
+&kp BACKSLASH  &kp Z  &kp X                &kp C             &kp D            &kp V           &kp ESCAPE  &kp ENTER   &kp SPACE       &kp BACKSPACE  &kp K       &kp H                     &kp COMMA        &kp DOT              &kp SLASH  &kp SQT
+                      &kp GLOBE            &kp LEFT_COMMAND  &mo 2            &kp LEFT_SHIFT  &to 4       &all_cap 1  &kp LEFT_SHIFT  &mo 3          &all_cap 1  &kp GLOBE
             >;
         };
 
         caps-word {
             display-name = "capw";
             bindings = <
-&trans  &kp LS(Q)            &kp LS(W)                &kp LS(F)                &kp LS(P)              &kp LS(B)                                  &kp LS(J)  &kp LS(L)              &kp LS(U)                &kp LS(Y)                &kp LS(MINUS)        &trans
-&trans  &hml LEFT_ALT LS(A)  &hml LEFT_CONTROL LS(R)  &hml LEFT_COMMAND LS(S)  &hml LEFT_SHIFT LS(T)  &kp LS(G)                                  &kp LS(M)  &hmr LEFT_SHIFT LS(N)  &hmr LEFT_COMMAND LS(E)  &hmr LEFT_CONTROL LS(I)  &hmr LEFT_ALT LS(O)  &trans
-&trans  &kp LS(Z)            &kp LS(X)                &kp LS(C)                &kp LS(D)              &kp LS(V)  &trans  &trans  &trans  &trans  &kp LS(K)  &kp LS(H)              &trans                   &trans                   &trans               &trans
-                             &trans                   &trans                   &trans                 &trans     &trans  &trans  &trans  &trans  &trans     &trans
+&trans  &kp LS(Q)  &kp LS(W)                &kp LS(F)            &kp LS(P)                &kp LS(B)                                  &kp LS(J)  &kp LS(L)                &kp LS(U)            &kp LS(Y)                &kp LS(MINUS)  &trans
+&trans  &kp LS(A)  &hml LEFT_CONTROL LS(R)  &hml LEFT_ALT LS(S)  &hml LEFT_COMMAND LS(T)  &kp LS(G)                                  &kp LS(M)  &hmr LEFT_COMMAND LS(N)  &hmr LEFT_ALT LS(E)  &hmr LEFT_CONTROL LS(I)  &kp LS(O)      &trans
+&trans  &kp LS(Z)  &kp LS(X)                &kp LS(C)            &kp LS(D)                &kp LS(V)  &trans  &trans  &trans  &trans  &kp LS(K)  &kp LS(H)                &trans               &trans                   &trans         &trans
+                   &trans                   &trans               &trans                   &trans     &trans  &trans  &trans  &trans  &trans     &trans
             >;
         };
 
-        numbers {
-            display-name = "nums";
+        lower {
+            display-name = "lower";
             bindings = <
-&to 6   &trans        &trans            &trans            &trans          &mo 7                                      &none         &kp N7        &kp N8        &kp N9        &trans  &trans
-&trans  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &mkp LCLK                                  &none         &kp N4        &kp N5        &kp N6        &none   &trans
-&trans  &trans        &trans            &trans            &trans          &mkp RCLK  &trans  &trans  &trans  &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &none
-                      &trans            &trans            &trans          &trans     &trans  &trans  &trans  &trans  &trans        &trans
+&trans  &kp F9  &kp F10               &kp F11           &kp F12           &mo 5                                      &none         &kp N7            &kp N8            &kp N9                &trans  &trans
+&trans  &kp F5  &hml LEFT_CONTROL F6  &hml LEFT_ALT F7  &hml LEFT_GUI F8  &mkp LCLK                                  &none         &hmr LEFT_GUI N4  &hmr LEFT_ALT N5  &hmr LEFT_CONTROL N6  &none   &trans
+&trans  &kp F1  &kp F2                &kp F3            &kp F4            &mkp RCLK  &trans  &trans  &trans  &trans  &kp NUMBER_0  &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3          &trans  &none
+                &trans                &trans            &trans            &trans     &trans  &trans  &trans  &trans  &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        symbols {
-            display-name = "sym";
+        raise {
+            display-name = "raise";
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT         &kp HASH      &kp DOLLAR            &kp PERCENT                                            &trans  &trans          &trans            &trans            &trans        &trans
-&trans  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                  &trans  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans
-&trans  &trans           &trans         &trans        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans  &trans  &trans          &trans            &trans            &trans        &trans
-                         &trans         &trans        &trans                &trans                 &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        navigation {
-            display-name = "nav";
-            bindings = <
-&trans  &trans        &trans            &trans            &trans          &trans                                  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
-&trans  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans                                  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
-&trans  &trans        &trans            &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
-                      &trans            &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans    &trans
-            >;
-        };
-
-        fn {
-            display-name = "fn";
-            bindings = <
-&to 5   &kp F9  &kp F10  &kp F11  &kp F12  &trans                                  &trans  &trans          &trans            &trans            &trans        &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans                                  &trans  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans            &trans            &trans        &trans
-                &trans   &trans   &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp EXCLAMATION  &kp AT                       &kp HASH                &kp DOLLAR                      &kp PERCENT                                            &kp HOME        &kp PAGE_UP   &kp PAGE_DOWN   &kp END          &trans  &trans
+&trans  &kp CARET        &hml LEFT_CONTROL AMPERSAND  &hml LEFT_ALT ASTERISK  &hml LEFT_GUI LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans           &kp LEFT_BRACE               &kp RIGHT_BRACE         &kp LEFT_BRACKET                &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans  &trans          &trans        &trans          &trans           &trans  &trans
+                         &trans                       &trans                  &trans                          &trans                 &trans  &trans  &trans  &trans  &trans          &trans
             >;
         };
 
         nav3d_layer {
             display-name = "nav_3d";
             bindings = <
-&to 0  &kp TAB    &kp Q   &kp W   &kp E   &kp R                                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&none  &kp LSHFT  &kp A   &kp S   &kp D   &kp F                                           &none         &none         &none         &none         &none         &bt BT_PRV
-&none  &kp LCTRL  &kp Z   &kp X   &kp C   &kp B   &kp BACKSPACE  &kp SPACE  &none  &none  &none         &none         &none         &none         &none         &bt BT_NXT
-                  &trans  &trans  &trans  &trans  &trans         &none      &none  &none  &none         &none
+&trans  &kp TAB    &kp Q   &kp W   &kp E   &kp R                                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&none   &kp LSHFT  &kp A   &kp S   &kp D   &kp F                                           &none         &none         &none         &none         &none         &bt BT_PRV
+&none   &kp LCTRL  &kp Z   &kp X   &kp C   &kp B   &kp BACKSPACE  &kp SPACE  &none  &none  &none         &none         &none         &none         &none         &bt BT_NXT
+                   &trans  &trans  &trans  &trans  &to 0          &none      &none  &none  &none         &none
             >;
         };
 
