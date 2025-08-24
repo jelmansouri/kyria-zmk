@@ -215,15 +215,15 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - '{'
+    - '}'
   - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - '['
     - ']'
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -238,7 +238,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   nav_3d:
-  - - ESC
+  - - ''
     - TAB
     - Q
     - W
@@ -259,9 +259,18 @@ layers:
     - ''
     - ''
   - ['', '', '', BT PRV, '', LCTRL, Z, X, C, B]
-  - [BACKSPACE, SPACE, '', '', '', '', '', '', '', BT NXT]
+  - - {t: ▽, type: trans}
+    - SPACE
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - BT NXT
   - - LEFT ALT
-    - {t: ▽, type: trans}
+    - LEFT GUI
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: base, h: toggle}
