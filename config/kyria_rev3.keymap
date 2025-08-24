@@ -61,7 +61,7 @@
             display-name = "base";
             bindings = <
 &kp GRAVE      &kp Q  &kp W                &kp F             &kp P            &kp B                                                                  &kp J  &kp L            &kp U            &kp Y                &kp MINUS  &kp EQUAL
-&kp TAB        &kp A  &hml LEFT_CONTROL R  &hml LEFT_ALT S   &hml LEFT_GUI T  &kp G                                                                  &kp M  &hmr N LEFT_GUI  &hmr LEFT_ALT E  &hmr LEFT_CONTROL I  &kp O      &kp SEMICOLON
+&kp TAB        &kp A  &hml LEFT_CONTROL R  &hml LEFT_ALT S   &hml LEFT_GUI T  &kp G                                                                  &kp M  &hmr LEFT_GUI N  &hmr LEFT_ALT E  &hmr LEFT_CONTROL I  &kp O      &kp SEMICOLON
 &kp BACKSLASH  &kp Z  &kp X                &kp C             &kp D            &kp V           &kp ESCAPE  &kp ENTER   &kp SPACE       &kp BACKSPACE  &kp K  &kp H            &kp COMMA        &kp DOT              &kp SLASH  &kp SQT
                       &kp GLOBE            &kp LEFT_COMMAND  &mo 3            &kp LEFT_SHIFT  &to 5       &all_cap 1  &kp LEFT_SHIFT  &mo 4          &mo 2  &kp GLOBE
             >;
