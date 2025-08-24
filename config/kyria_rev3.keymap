@@ -102,20 +102,20 @@
         raise {
             display-name = "raise";
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT                       &kp HASH                &kp DOLLAR                      &kp PERCENT                                            &kp HOME        &kp PAGE_UP       &kp PAGE_DOWN      &kp END          &trans  &trans
-&trans  &kp CARET        &hml LEFT_CONTROL AMPERSAND  &hml LEFT_ALT ASTERISK  &hml LEFT_GUI LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                  &kp LEFT_ARROW  &kp UP_ARROW      &kp DOWN_ARROW     &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans           &trans                       &trans                  &trans                          &trans                 &trans  &trans  &trans  &trans  &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans           &trans  &trans
-                         &trans                       &trans                  &trans                          &trans                 &trans  &trans  &trans  &trans  &trans          &trans
+&trans  &kp EXCLAMATION  &kp AT                       &kp HASH                &kp DOLLAR                      &kp PERCENT                                            &kp HOME          &kp PAGE_UP        &kp PAGE_DOWN   &kp END           &trans  &trans
+&trans  &kp CARET        &hml LEFT_CONTROL AMPERSAND  &hml LEFT_ALT ASTERISK  &hml LEFT_GUI LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                  &kp LEFT_ARROW    &kp UP_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW   &trans  &trans
+&trans  &trans           &trans                       &trans                  &kp LEFT_BRACE                  &kp RIGHT_BRACE        &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN   &kp GREATER_THAN  &trans  &trans
+                         &trans                       &trans                  &trans                          &trans                 &trans  &trans  &trans  &trans  &trans            &trans
             >;
         };
 
         nav3d_layer {
             display-name = "nav_3d";
             bindings = <
-&none  &kp TAB    &kp Q         &kp W   &kp E   &kp R                                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&none  &kp LSHFT  &kp A         &kp S   &kp D   &kp F                                    &none         &none         &none         &none         &none         &bt BT_PRV
-&none  &kp LCTRL  &kp Z         &kp X   &kp C   &kp B   &trans  &kp SPACE  &none  &none  &none         &none         &none         &none         &none         &bt BT_NXT
-                  &kp LEFT_ALT  &trans  &trans  &trans  &to 0   &none      &none  &none  &none         &none
+&none  &kp TAB    &kp Q         &kp W         &kp E   &kp R                                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&none  &kp LSHFT  &kp A         &kp S         &kp D   &kp F                                    &none         &none         &none         &none         &none         &bt BT_PRV
+&none  &kp LCTRL  &kp Z         &kp X         &kp C   &kp B   &trans  &kp SPACE  &none  &none  &none         &none         &none         &none         &none         &bt BT_NXT
+                  &kp LEFT_ALT  &kp LEFT_GUI  &trans  &trans  &to 0   &none      &none  &none  &none         &none
             >;
         };
 
