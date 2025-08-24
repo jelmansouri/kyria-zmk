@@ -112,10 +112,10 @@
         nav3d_layer {
             display-name = "nav_3d";
             bindings = <
-&kp ESC  &kp TAB    &kp Q         &kp W   &kp E   &kp R                                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&none    &kp LSHFT  &kp A         &kp S   &kp D   &kp F                                           &none         &none         &none         &none         &none         &bt BT_PRV
-&none    &kp LCTRL  &kp Z         &kp X   &kp C   &kp B   &kp BACKSPACE  &kp SPACE  &none  &none  &none         &none         &none         &none         &none         &bt BT_NXT
-                    &kp LEFT_ALT  &trans  &trans  &trans  &to 0          &none      &none  &none  &none         &none
+&none  &kp TAB    &kp Q         &kp W   &kp E   &kp R                                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&none  &kp LSHFT  &kp A         &kp S   &kp D   &kp F                                    &none         &none         &none         &none         &none         &bt BT_PRV
+&none  &kp LCTRL  &kp Z         &kp X   &kp C   &kp B   &trans  &kp SPACE  &none  &none  &none         &none         &none         &none         &none         &bt BT_NXT
+                  &kp LEFT_ALT  &trans  &trans  &trans  &to 0   &none      &none  &none  &none         &none
             >;
         };
 
