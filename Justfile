@@ -19,7 +19,7 @@ all: draw
 # 1) keymap.json -> keymap.yaml
 parse:
     echo "Parsing JSON -> YAML (cols={{COLS}})"
-    keymap parse -c {{COLS}} -z "config/kyria_rev3.keymap" > "{{OUT}}/keymap.yaml"
+    keymap -c "{{OUT}}/keymap-config.yaml" parse -c {{COLS}} -z "config/kyria_rev3.keymap" > "{{OUT}}/keymap.yaml"
 
 # 2) Draw each layer to its own SVG
 draw: parse

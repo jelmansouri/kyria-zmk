@@ -4,16 +4,16 @@ layers:
   - ['`', Q, W, F, P, B, J, L, U, Y]
   - - '-'
     - '='
-    - TAB
+    - $$mdi:keyboard-tab$$"
     - A
-    - {t: R, h: LEFT CONTROL}
-    - {t: S, h: LEFT ALT}
-    - {t: T, h: LEFT GUI}
+    - {t: R, h: '$$mdi:apple-keyboard-control$$'}
+    - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+    - {t: T, h: '$$mdi:apple-keyboard-command$$'}
     - G
     - M
-    - {t: N, h: LEFT GUI}
-  - - {t: E, h: LEFT ALT}
-    - {t: I, h: LEFT CONTROL}
+    - {t: N, h: '$$mdi:apple-keyboard-command$$'}
+  - - {t: E, h: '$$mdi:apple-keyboard-option$$'}
+    - {t: I, h: '$$mdi:apple-keyboard-control$$'}
     - O
     - ;
     - \
@@ -22,17 +22,17 @@ layers:
     - C
     - D
     - V
-  - [ESCAPE, ENTER, SPACE, BACKSPACE, K, H, ',', ., /, '''']
-  - - GLOBE
-    - LEFT COMMAND
+  - ['$$mdi:keyboard-esc$$"', '$$mdi:keyboard-return$$"', '$$mdi:keyboard-space$$"', '$$mdi:backspace$$"', K, H, ',', ., /, '''']
+  - - $$mdi:web$$
+    - $$mdi:apple-keyboard-command$$
     - lower
-    - LEFT SHIFT
+    - $$mdi:apple-keyboard-shift$$
     - {t: nav_3d, h: toggle}
     - '&all_cap 1'
-    - LEFT SHIFT
+    - $$mdi:apple-keyboard-shift$$
     - raise
     - no_hrm
-    - GLOBE
+    - $$mdi:web$$
   capw:
   - - {t: ▽, type: trans}
     - Sft+Q
@@ -48,14 +48,14 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - Sft+A
-    - {t: Sft+R, h: LEFT CONTROL}
-    - {t: Sft+S, h: LEFT ALT}
-    - {t: Sft+T, h: LEFT COMMAND}
+    - {t: Sft+R, h: '$$mdi:apple-keyboard-control$$'}
+    - {t: Sft+S, h: '$$mdi:apple-keyboard-option$$'}
+    - {t: Sft+T, h: '$$mdi:apple-keyboard-command$$'}
     - Sft+G
     - Sft+M
-    - {t: Sft+N, h: LEFT COMMAND}
-  - - {t: Sft+E, h: LEFT ALT}
-    - {t: Sft+I, h: LEFT CONTROL}
+    - {t: Sft+N, h: '$$mdi:apple-keyboard-command$$'}
+  - - {t: Sft+E, h: '$$mdi:apple-keyboard-option$$'}
+    - {t: Sft+I, h: '$$mdi:apple-keyboard-control$$'}
     - Sft+O
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -150,14 +150,14 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - F5
-    - {t: F6, h: LEFT CONTROL}
-    - {t: F7, h: LEFT ALT}
-    - {t: F8, h: LEFT GUI}
+    - {t: F6, h: '$$mdi:apple-keyboard-control$$'}
+    - {t: F7, h: '$$mdi:apple-keyboard-option$$'}
+    - {t: F8, h: '$$mdi:apple-keyboard-command$$'}
     - '&mkp LCLK'
     - ''
-    - {t: '4', h: LEFT GUI}
-  - - {t: '5', h: LEFT ALT}
-    - {t: '6', h: LEFT CONTROL}
+    - {t: '4', h: '$$mdi:apple-keyboard-command$$'}
+  - - {t: '5', h: '$$mdi:apple-keyboard-option$$'}
+    - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
     - ''
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -201,14 +201,14 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - ^
-    - {t: '&', h: LEFT CONTROL}
-    - {t: '*', h: LEFT ALT}
-    - {t: (, h: LEFT GUI}
+    - {t: '&', h: '$$mdi:apple-keyboard-control$$'}
+    - {t: '*', h: '$$mdi:apple-keyboard-option$$'}
+    - {t: (, h: '$$mdi:apple-keyboard-command$$'}
     - )
-    - LEFT ARROW
-    - UP ARROW
-  - - DOWN ARROW
-    - RIGHT ARROW
+    - $$mdi:arrow-left-thick$$
+    - $$mdi:arrow-up-thick$$
+  - - $$mdi:arrow-down-thick$$
+    - $$mdi:arrow-right-thick$$
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -239,7 +239,7 @@ layers:
     - {t: ▽, type: trans}
   nav_3d:
   - - ''
-    - TAB
+    - $$mdi:keyboard-tab$$"
     - Q
     - W
     - E
@@ -260,7 +260,7 @@ layers:
     - ''
   - ['', '', '', BT PRV, '', LCTRL, Z, X, C, B]
   - - {t: ▽, type: trans}
-    - SPACE
+    - $$mdi:keyboard-space$$"
     - ''
     - ''
     - ''
@@ -269,8 +269,8 @@ layers:
     - ''
     - ''
     - BT NXT
-  - - LEFT ALT
-    - LEFT GUI
+  - - $$mdi:apple-keyboard-option$$
+    - $$mdi:apple-keyboard-command$$
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: base, h: toggle}
