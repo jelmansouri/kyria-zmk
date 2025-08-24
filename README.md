@@ -1,4 +1,4 @@
-# Kyria Layout (Timeless and shiftless HRM)
+# ZMK Kyria Layout
 
 You can find more insight into the layout logic in [my QMK userspace repository](https://github.com/jelmansouri/qmk_userspace/tree/jelmansouri).
 
