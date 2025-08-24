@@ -11,7 +11,7 @@ layers:
     - {t: T, h: LEFT GUI}
     - G
     - M
-    - {t: LEFT GUI, h: LEFT SHIFT}
+    - {t: LEFT GUI, h: N}
   - - {t: E, h: LEFT ALT}
     - {t: I, h: LEFT CONTROL}
     - O
