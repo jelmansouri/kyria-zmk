@@ -1,0 +1,332 @@
+layout: {zmk_keyboard: kyria_rev3}
+layers:
+  base:
+  - ['`', Q, W, F, P, B, J, L, U, Y]
+  - - '-'
+    - '='
+    - $$mdi:keyboard-tab$$"
+    - A
+    - {t: R, h: '$$mdi:apple-keyboard-control$$'}
+    - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+    - {t: T, h: '$$mdi:apple-keyboard-command$$'}
+    - G
+    - M
+    - {t: N, h: '$$mdi:apple-keyboard-command$$'}
+  - - {t: E, h: '$$mdi:apple-keyboard-option$$'}
+    - {t: I, h: '$$mdi:apple-keyboard-control$$'}
+    - O
+    - ;
+    - \
+    - Z
+    - X
+    - C
+    - D
+    - V
+  - ['$$mdi:keyboard-esc$$"', '$$mdi:keyboard-return$$"', '$$mdi:keyboard-space$$"', '$$mdi:backspace$$"', K, H, ',', ., /, '''']
+  - - $$mdi:web$$
+    - $$mdi:apple-keyboard-command$$
+    - lower
+    - $$mdi:apple-keyboard-shift$$
+    - {t: nav_3d, h: toggle}
+    - '&all_cap 1'
+    - $$mdi:apple-keyboard-shift$$
+    - raise
+    - no_hrm
+    - $$mdi:web$$
+  capw:
+  - - {t: ▽, type: trans}
+    - Sft+Q
+    - Sft+W
+    - Sft+F
+    - Sft+P
+    - Sft+B
+    - Sft+J
+    - Sft+L
+    - Sft+U
+    - Sft+Y
+  - - Sft+-
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - Sft+A
+    - {t: Sft+R, h: '$$mdi:apple-keyboard-control$$'}
+    - {t: Sft+S, h: '$$mdi:apple-keyboard-option$$'}
+    - {t: Sft+T, h: '$$mdi:apple-keyboard-command$$'}
+    - Sft+G
+    - Sft+M
+    - {t: Sft+N, h: '$$mdi:apple-keyboard-command$$'}
+  - - {t: Sft+E, h: '$$mdi:apple-keyboard-option$$'}
+    - {t: Sft+I, h: '$$mdi:apple-keyboard-control$$'}
+    - Sft+O
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - Sft+Z
+    - Sft+X
+    - Sft+C
+    - Sft+D
+    - Sft+V
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - Sft+K
+    - Sft+H
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  no_hrm:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - R
+    - S
+    - T
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - N
+  - - E
+    - I
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+  lower:
+  - - {t: ▽, type: trans}
+    - F9
+    - F10
+    - F11
+    - F12
+    - scroll
+    - ''
+    - '7'
+    - '8'
+    - '9'
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - F5
+    - {t: F6, h: '$$mdi:apple-keyboard-control$$'}
+    - {t: F7, h: '$$mdi:apple-keyboard-option$$'}
+    - {t: F8, h: '$$mdi:apple-keyboard-command$$'}
+    - '&mkp LCLK'
+    - ''
+    - {t: '4', h: '$$mdi:apple-keyboard-command$$'}
+  - - {t: '5', h: '$$mdi:apple-keyboard-option$$'}
+    - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
+    - ''
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - F1
+    - F2
+    - F3
+    - F4
+    - '&mkp RCLK'
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '0'
+    - '1'
+    - '2'
+    - '3'
+    - {t: ▽, type: trans}
+    - ''
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  raise:
+  - - {t: ▽, type: trans}
+    - '!'
+    - '@'
+    - '#'
+    - $
+    - '%'
+    - HOME
+    - PAGE UP
+    - PAGE DOWN
+    - END
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - ^
+    - {t: '&', h: '$$mdi:apple-keyboard-control$$'}
+    - {t: '*', h: '$$mdi:apple-keyboard-option$$'}
+    - {t: (, h: '$$mdi:apple-keyboard-command$$'}
+    - )
+    - $$mdi:arrow-left-thick$$
+    - $$mdi:arrow-up-thick$$
+  - - $$mdi:arrow-down-thick$$
+    - $$mdi:arrow-right-thick$$
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '{'
+    - '}'
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '['
+    - ']'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  nav_3d:
+  - - ''
+    - $$mdi:keyboard-tab$$"
+    - Q
+    - W
+    - E
+    - R
+    - {t: BT, h: '0'}
+    - {t: BT, h: '1'}
+    - {t: BT, h: '2'}
+    - {t: BT, h: '3'}
+  - - {t: BT, h: '4'}
+    - BT CLR
+    - ''
+    - LSHFT
+    - A
+    - S
+    - D
+    - F
+    - ''
+    - ''
+  - ['', '', '', BT PRV, '', LCTRL, Z, X, C, B]
+  - - {t: ▽, type: trans}
+    - $$mdi:keyboard-space$$"
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - BT NXT
+  - - $$mdi:apple-keyboard-option$$
+    - $$mdi:apple-keyboard-command$$
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: base, h: toggle}
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  scroll:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}

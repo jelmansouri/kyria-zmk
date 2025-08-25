@@ -3,11 +3,22 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
+    - name: urob
+      url-base: https://github.com/urob
+    - name: jelmansouri
+      url-base: https://github.com/jelmansouri
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: cirque-input-module
+      remote: petejohanson
+      revision: main
+    - name: zmk-auto-layer
+      remote: jelmansouri
+      revision: fix/modifier-exclusivity
   self:
     path: config
