@@ -206,8 +206,8 @@ layers:
     - {t: (, h: '$$mdi:apple-keyboard-command$$'}
     - )
     - $$mdi:arrow-left-thick$$
-    - $$mdi:arrow-up-thick$$
-  - - $$mdi:arrow-down-thick$$
+    - $$mdi:arrow-down-thick$$
+  - - $$mdi:arrow-up-thick$$
     - $$mdi:arrow-right-thick$$
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
