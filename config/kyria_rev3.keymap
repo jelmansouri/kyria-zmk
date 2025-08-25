@@ -102,9 +102,9 @@
         raise {
             display-name = "raise";
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT                       &kp HASH                &kp DOLLAR                      &kp PERCENT                                            &kp HOME          &kp PAGE_UP        &kp PAGE_DOWN   &kp END          &trans  &trans
-&trans  &kp CARET        &hml LEFT_CONTROL AMPERSAND  &hml LEFT_ALT ASTERISK  &hml LEFT_GUI LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                  &kp LEFT_ARROW    &kp UP_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans           &trans                       &trans                  &kp LEFT_BRACE                  &kp RIGHT_BRACE        &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans          &trans           &trans  &trans
+&trans  &kp EXCLAMATION  &kp AT                       &kp HASH                &kp DOLLAR                      &kp PERCENT                                            &kp HOME          &kp PAGE_UP        &kp PAGE_DOWN  &kp END          &trans  &trans
+&trans  &kp CARET        &hml LEFT_CONTROL AMPERSAND  &hml LEFT_ALT ASTERISK  &hml LEFT_GUI LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                  &kp LEFT_ARROW    &kp DOWN_ARROW     &kp UP_ARROW   &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans           &trans                       &trans                  &kp LEFT_BRACE                  &kp RIGHT_BRACE        &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &trans           &trans  &trans
                          &trans                       &trans                  &trans                          &trans                 &trans  &trans  &trans  &trans  &trans            &trans
             >;
         };
