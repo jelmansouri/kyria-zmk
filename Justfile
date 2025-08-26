@@ -1,37 +1,28 @@
 # Use bash with strict flags
 set shell := ["bash", "-eu", "-o", "pipefail", "-c"]
 
-# Column count for keymap-drawer parsing
-COLS := "10"
+LAYOUT_DRAWINGS_OUT := "assets/layout_drawings/generated"
+LAYOUT_DRAWINGS_CONFIG := "assets/layout_drawings/keymap-config.yaml"
 
-# Output directory
-OUT := "assets"
+LAYER_NAMES := "base lower raise nav_3d"
 
-# Layers to draw (space-separated)
-LAYERS := "base lower raise nav_3d"
-
-# ---------- Phonies ----------
 default: all
 
-# End-to-end
 all: draw
 
-# 1) keymap.json -> keymap.yaml
 parse:
-    echo "Parsing JSON -> YAML (cols={{COLS}})"
-    keymap -c "{{OUT}}/keymap-config.yaml" parse -c {{COLS}} -z "config/kyria_rev3.keymap" > "{{OUT}}/keymap.yaml"
+    keymap -c "{{LAYOUT_DRAWINGS_CONFIG}}" parse -c 10 -z "config/kyria_rev3.keymap" > "{{LAYOUT_DRAWINGS_OUT}}/keymap.yaml"
 
-# 2) Draw each layer to its own SVG
 draw: parse
     #!/usr/bin/env bash
     set -euo pipefail
-    keymap draw "{{OUT}}/keymap.yaml" -o "{{OUT}}/keymap.svg";
-    for L in {{LAYERS}}; do
+    keymap draw "{{LAYOUT_DRAWINGS_OUT}}/keymap.yaml" -o "{{LAYOUT_DRAWINGS_OUT}}/keymap.svg";
+    for L in {{LAYER_NAMES}}; do
         echo "Drawing layer: $L"
-        keymap draw "{{OUT}}/keymap.yaml" -s "$L" -o "{{OUT}}/keymap_$L.svg";
-        echo "SVG written to {{OUT}}/keymap_$L.svg"
+        keymap draw "{{LAYOUT_DRAWINGS_OUT}}/keymap.yaml" -s "$L" -o "{{LAYOUT_DRAWINGS_OUT}}/keymap_$L.svg";
+        echo "SVG written to {{LAYOUT_DRAWINGS_OUT}}/keymap_$L.svg"
     done
 
 # Cleanup
 clean:
-    rm -rf "{{OUT}}"
+    rm {{LAYOUT_DRAWINGS_OUT}}/*
