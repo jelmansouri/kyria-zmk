@@ -72,11 +72,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LEFT_CONTROL &mo 2>,
+                <&macro_press &mo 2 &kp LEFT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&macro_release>,
-                <&kp LEFT_CONTROL &mo 2>;
+                <&macro_release &mo 2 &kp LEFT_CONTROL>;
 
             label = "HRM_RIGHT_CTL";
         };
