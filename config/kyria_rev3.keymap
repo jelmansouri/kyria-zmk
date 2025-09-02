@@ -58,7 +58,7 @@
         hrm_rigtht_ctl: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &mo 7>;
+            bindings = <&kp LEFT_CONTROL &mo 2>;
             label = "NEW_MACRO";
         };
     };
@@ -72,7 +72,7 @@
 &kp GRAVE      &kp Q  &kp W                &kp F             &kp P            &kp B                                                                  &kp J  &kp L            &kp U            &kp Y                &kp MINUS  &kp EQUAL
 &kp TAB        &kp A  &hml LEFT_CONTROL R  &hml LEFT_ALT S   &hml LEFT_GUI T  &kp G                                                                  &kp M  &hmr LEFT_GUI N  &hmr LEFT_ALT E  &hmr LEFT_CONTROL I  &kp O      &kp SEMICOLON
 &kp BACKSLASH  &kp Z  &kp X                &kp C             &kp D            &kp V           &kp ESCAPE  &kp ENTER   &kp SPACE       &kp BACKSPACE  &kp K  &kp H            &kp COMMA        &kp DOT              &kp SLASH  &kp SQT
-                      &kp GLOBE            &kp LEFT_COMMAND  &mo 3            &kp LEFT_SHIFT  &to 5       &all_cap 1  &kp LEFT_SHIFT  &mo 4          &mo 2  &kp DELETE
+                      &kp GLOBE            &kp LEFT_COMMAND  &mo 4            &kp LEFT_SHIFT  &to 6       &all_cap 1  &kp LEFT_SHIFT  &mo 5          &mo 3  &kp DELETE
             >;
         };
 
@@ -83,6 +83,16 @@
 &trans  &kp LS(A)  &hml LEFT_CONTROL LS(R)  &hml LEFT_ALT LS(S)  &hml LEFT_COMMAND LS(T)  &kp LS(G)                                  &kp LS(M)  &hmr LEFT_COMMAND LS(N)  &hmr LEFT_ALT LS(E)  &hmr LEFT_CONTROL LS(I)  &kp LS(O)      &trans
 &trans  &kp LS(Z)  &kp LS(X)                &kp LS(C)            &kp LS(D)                &kp LS(V)  &trans  &trans  &trans  &trans  &kp LS(K)  &kp LS(H)                &trans               &trans                   &trans         &trans
                    &trans                   &trans               &trans                   &trans     &trans  &trans  &trans  &trans  &trans     &trans
+            >;
+        };
+
+        base_hrm_left_disable {
+            display-name = "base";
+            bindings = <
+&kp GRAVE      &kp Q  &kp W      &kp F             &kp P  &kp B                                                                  &kp J  &kp L            &kp U            &kp Y                &kp MINUS  &kp EQUAL
+&kp TAB        &kp A  &kp R      &kp S             &kp T  &kp G                                                                  &kp M  &hmr LEFT_GUI N  &hmr LEFT_ALT E  &hmr LEFT_CONTROL I  &kp O      &kp SEMICOLON
+&kp BACKSLASH  &kp Z  &kp X      &kp C             &kp D  &kp V           &kp ESCAPE  &kp ENTER   &kp SPACE       &kp BACKSPACE  &kp K  &kp H            &kp COMMA        &kp DOT              &kp SLASH  &kp SQT
+                      &kp GLOBE  &kp LEFT_COMMAND  &mo 4  &kp LEFT_SHIFT  &to 6       &all_cap 1  &kp LEFT_SHIFT  &mo 5          &mo 3  &kp DELETE
             >;
         };
 
@@ -99,7 +109,7 @@
         lower {
             display-name = "lower";
             bindings = <
-&trans  &kp F9  &kp F10               &kp F11           &kp F12           &mo 6                                      &none         &kp N7            &kp N8            &kp N9                &trans  &trans
+&trans  &kp F9  &kp F10               &kp F11           &kp F12           &mo 7                                      &none         &kp N7            &kp N8            &kp N9                &trans  &trans
 &trans  &kp F5  &hml LEFT_CONTROL F6  &hml LEFT_ALT F7  &hml LEFT_GUI F8  &mkp LCLK                                  &none         &hmr LEFT_GUI N4  &hmr LEFT_ALT N5  &hmr LEFT_CONTROL N6  &none   &trans
 &trans  &kp F1  &kp F2                &kp F3            &kp F4            &mkp RCLK  &trans  &trans  &trans  &trans  &kp NUMBER_0  &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3          &trans  &none
                 &trans                &trans            &trans            &trans     &trans  &trans  &trans  &trans  &trans        &trans
@@ -135,16 +145,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        base_hrm_left_disable {
-            display-name = "base";
-            bindings = <
-&kp GRAVE      &kp Q  &kp W                &kp F             &kp P            &kp B                                                                  &kp J  &kp L            &kp U            &kp Y                &kp MINUS  &kp EQUAL
-&kp TAB        &kp A  &hml LEFT_CONTROL R  &hml LEFT_ALT S   &hml LEFT_GUI T  &kp G                                                                  &kp M  &hmr LEFT_GUI N  &hmr LEFT_ALT E  &hmr LEFT_CONTROL I  &kp O      &kp SEMICOLON
-&kp BACKSLASH  &kp Z  &kp X                &kp C             &kp D            &kp V           &kp ESCAPE  &kp ENTER   &kp SPACE       &kp BACKSPACE  &kp K  &kp H            &kp COMMA        &kp DOT              &kp SLASH  &kp SQT
-                      &kp GLOBE            &kp LEFT_COMMAND  &mo 3            &kp LEFT_SHIFT  &to 5       &all_cap 1  &kp LEFT_SHIFT  &mo 4          &mo 2  &kp DELETE
             >;
         };
     };
