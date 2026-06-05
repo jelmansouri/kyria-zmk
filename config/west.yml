@@ -19,6 +19,6 @@ manifest:
       revision: main
     - name: zmk-auto-layer
       remote: jelmansouri
-      revision: fix/modifier-exclusivity
+      revision: 40f94df8646b0d11fa60f10d17400ef2ad8f52aa
   self:
     path: config
